@@ -15,3 +15,26 @@
   background-color: rgb(125, 42, 42);
   clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);
 }
+
+.bannerMessage {
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(189, 161, 156);
+  position: relative;
+  bottom: 150px;
+  left: 25%;
+  display: flex;
+  width: 50%;
+  border-radius: 15px;
+}
+
+.bannerMessage h1 {
+  color: rgb(0, 0, 0);
+}
+
+.bannerMessage p {
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  width: 50%;
+  padding: 0px 15px 15px 0px;
+}

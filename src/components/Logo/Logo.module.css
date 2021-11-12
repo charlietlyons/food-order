@@ -4,12 +4,12 @@
   margin: 35px 0px 35px 20%;
 }
 
-.h1 {
+.logoContainer h1 {
   text-align: center;
   margin: 0px;
 }
 
-.p {
+.logoContainer p {
   margin: 0px;
   text-align: center;
 }
