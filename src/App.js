@@ -1,10 +1,13 @@
 import './App.css';
 import NavigationBar from './components/Navigation/NavigationBar'
+import Banner from './components/Banner/Banner'
 
 function App() {
   return (
     <div className="App">
-      <NavigationBar></NavigationBar>
+      <NavigationBar/>
+      <Banner/>
+      {/* <Section /> */}
     </div>
   );
 }

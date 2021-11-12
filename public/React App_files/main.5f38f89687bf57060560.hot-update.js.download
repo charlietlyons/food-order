@@ -1,0 +1,30 @@
+webpackHotUpdate("main",{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/components/Banner/Banner.module.css":
+/*!****************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-5-1!./node_modules/postcss-loader/src??postcss!./src/components/Banner/Banner.module.css ***!
+  \****************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".Banner_banner__32eKh {\r\n  background-image: url(\"https://external-preview.redd.it/mfOQ0eUPj3SldsPGqHDsSfhCpo-uHTPpJfXVEpEu5z0.jpg?auto=webp&s=2e358d7534e3b1ef9912e2f51ea71e85c092510f\");\r\n  width: 100%;\r\n  height: 500px;\r\n  margin-top: 135px;\r\n  background-size: cover;\r\n}\r\n\r\n.Banner_edge__1ftbZ {\r\n  position: absolute;\r\n  height: 50px;\r\n  background-color: rgb(167, 46, 46);\r\n}\r\n", "",{"version":3,"sources":["webpack://src/components/Banner/Banner.module.css"],"names":[],"mappings":"AAAA;EACE,8JAA8J;EAC9J,WAAW;EACX,aAAa;EACb,iBAAiB;EACjB,sBAAsB;AACxB;;AAEA;EACE,kBAAkB;EAClB,YAAY;EACZ,kCAAkC;AACpC","sourcesContent":[".banner {\r\n  background-image: url(\"https://external-preview.redd.it/mfOQ0eUPj3SldsPGqHDsSfhCpo-uHTPpJfXVEpEu5z0.jpg?auto=webp&s=2e358d7534e3b1ef9912e2f51ea71e85c092510f\");\r\n  width: 100%;\r\n  height: 500px;\r\n  margin-top: 135px;\r\n  background-size: cover;\r\n}\r\n\r\n.edge {\r\n  position: absolute;\r\n  height: 50px;\r\n  background-color: rgb(167, 46, 46);\r\n}\r\n"],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"banner": "Banner_banner__32eKh",
+	"edge": "Banner_edge__1ftbZ"
+};
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ })
+
+})
+//# sourceMappingURL=main.5f38f89687bf57060560.hot-update.js.map
