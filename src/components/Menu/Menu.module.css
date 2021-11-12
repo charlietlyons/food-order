@@ -1,0 +1,46 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 75%;
+  border-radius: 15px;
+  margin: 40px;
+}
+
+.menuItem {
+  display: flex;
+  height: 75px;
+  border: solid rgb(228, 228, 228) 1px;
+  border-radius: 15px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.purchaseInputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.amount {
+  width: 40px;
+  margin-left: 20px;
+}
+
+.addToCartButton {
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+  background-color: rgb(125, 42, 42);
+  color: whitesmoke;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.addToCartButton:hover {
+  background-color: rgb(162, 68, 68);
+}
+
+.addToCartButton:active {
+  background-color: rgb(105, 19, 19);
+}

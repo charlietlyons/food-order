@@ -6,7 +6,7 @@ import styles from './NavigationBar.module.css'
 const NavigationBar = () => {
     return <div className={styles.navigationBar}>
         <Logo />
-        <Button displayValue="Your Cart" />
+        <Button className={styles.yourCartButton} displayValue="Your Cart" />
     </div>
 }
 
