@@ -6,7 +6,7 @@ import styles from './Menu.module.css'
 
 const MenuItem = (props) => {
     return <div className={styles.menuItem}>
-        <MenuItemInfo value={props.value}></MenuItemInfo>
+        <MenuItemInfo title={props.title} description={props.description} price={props.price} ></MenuItemInfo>
         <PurchaseInputs></PurchaseInputs>
     </div>
 }

@@ -2,18 +2,27 @@
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
-  width: 75%;
+  width: 50%;
   border-radius: 15px;
   margin: 40px;
 }
 
 .menuItem {
   display: flex;
-  height: 75px;
+  height: 100%;
   border: solid rgb(228, 228, 228) 1px;
   border-radius: 15px;
   justify-content: space-between;
   padding: 10px;
+}
+
+.menuItem h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.menuItem p {
+  margin: 0;
 }
 
 .purchaseInputs {
