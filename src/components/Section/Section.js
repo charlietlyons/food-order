@@ -3,9 +3,9 @@ import Menu from '../Menu/Menu'
 
 import styles from './Section.module.css'
 
-const Section = () => {
+const Section = (props) => {
     return <div className={styles.section}>
-        <Menu />
+        <Menu addItem={props.addItem} />
     </div>
 }
 

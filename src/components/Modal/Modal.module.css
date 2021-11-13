@@ -3,5 +3,14 @@
 }
 
 .modal {
-  display: block;
+  z-index: 3;
+  position: fixed;
+  display: flex;
+  width: 45%;
+  height: 45%;
+  justify-content: center;
+  top: 27.5%;
+  left: 27.5%;
+  background-color: aliceblue;
+  border: solid black 1px;
 }
