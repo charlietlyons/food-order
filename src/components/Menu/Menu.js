@@ -24,7 +24,8 @@ const Menu = (props) => {
     }];
 
     return <div className={styles.menu}>
-        {ITEMS.map((item, index) => {
+        {
+        ITEMS.map((item, index) => {
             return <MenuItem key={item.title + index} title={item.title} description={item.description} price={item.price} addItem={props.addItem}/>
         })}
     </div>

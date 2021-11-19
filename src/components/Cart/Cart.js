@@ -5,10 +5,16 @@ import CartItem from './CartItem';
 
 
 const Cart = (props) => {
+    function renderItems() {
+        if (props.items) {
+            props.items.map((item, index) => {
+                return <CartItem key={item.title + index} title={item.title} amount={item.amount} price={item.price} />    
+            })
+        }
+    }
+
     return <div className={styles.cart}>
-        {props.items.map((item, index) => {
-            return <CartItem key={item.title + index} title={item.title} amount={item.amount} price={item.price}></CartItem>    
-        })}    
+        {renderItems()}    
     </div>
 }
 
