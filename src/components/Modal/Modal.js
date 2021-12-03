@@ -1,11 +1,16 @@
 import React from 'react'
+import Cart from '../Cart/Cart';
+import Row from '../Common/Row';
 
 import styles from './Modal.module.css'
 
-const Modal = () => {
-    return <div className={styles.modal}>
-
-    </div>
+const Modal = (props) => {
+    return <Row>
+        <div className={ props.showModal ? styles.modal : styles.hiddenModal}>
+            <Cart />
+        </div>
+    </Row>
+    
 }
 
 export default Modal;

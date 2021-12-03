@@ -4,7 +4,6 @@ import MenuItem from './MenuItem';
 import styles from './Menu.module.css'
 
 const Menu = () => {
-
     const ITEMS = [{
         title: "Big Fat Pizza Pie",
         description: "it's a thing",
