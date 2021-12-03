@@ -7,7 +7,7 @@ import styles from './Modal.module.css'
 const Modal = (props) => {
     return <Row>
         <div className={ props.showModal ? styles.modal : styles.hiddenModal}>
-            <Cart items={props.items}/>
+            <Cart />
         </div>
     </Row>
     

@@ -3,8 +3,7 @@ import MenuItem from './MenuItem';
 
 import styles from './Menu.module.css'
 
-const Menu = (props) => {
-
+const Menu = () => {
     const ITEMS = [{
         title: "Big Fat Pizza Pie",
         description: "it's a thing",
@@ -25,7 +24,7 @@ const Menu = (props) => {
 
     return <div className={styles.menu}>
         {ITEMS.map((item, index) => {
-            return <MenuItem key={item.title + index} title={item.title} description={item.description} price={item.price} addItem={props.addItem}/>
+            return <MenuItem key={item.title + index} title={item.title} description={item.description} price={item.price}/>
         })}
     </div>
 }
