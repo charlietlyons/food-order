@@ -5,15 +5,16 @@ const CartContext = React.createContext()
 
 export const CartContextProvider = (props) => {
     const [items, dispatch] = useReducer(ItemReducer, [])
-    const [total, setTotal] = useState(0);
+    const [totalPrice, setTotalPrice] = useState(0.00);
+    const [totalItems, setTotalItems] = useState(0);
 
     return <CartContext.Provider value={{
         items: items,
-        total: total,
+        totalPrice: totalPrice,
+        totalItems: totalItems,
         updateItems: (newItem) => {
-            console.log(total)
-            console.log(newItem.price)
-            setTotal(total + parseFloat(newItem.price));
+            setTotalItems(totalItems + parseInt(newItem.amount))
+            setTotalPrice(totalPrice + parseFloat(newItem.price));
             dispatch(newItem);
         } 
     }}>

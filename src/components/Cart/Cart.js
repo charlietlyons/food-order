@@ -13,7 +13,7 @@ const Cart = () => {
                 return <CartItem key={item.title + index} title={item.title} amount={item.amount} price={item.price}></CartItem>    
             })}
         </div>
-        <h2>Total {cartContext.total.toFixed(2)}</h2>
+        <h2>Total {cartContext.totalPrice.toFixed(2)}</h2>
     </div>
 }
 
