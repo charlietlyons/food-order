@@ -1,4 +1,5 @@
 .notification {
+  display: block;
   background-color: maroon;
   border-radius: 50%;
   padding: 5px;
