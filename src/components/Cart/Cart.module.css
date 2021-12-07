@@ -1,10 +1,22 @@
+h2 {
+  font-size: large;
+  text-align: center;
+}
+
 .cart p {
   margin: 0px 0px 0px 25px;
 }
 
 .cart {
-  width: 90%;
+  width: 100%;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartList {
+  padding-left: 5%;
+  width: 90%;
 }
 
 .cartItem {
