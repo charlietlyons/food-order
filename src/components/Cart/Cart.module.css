@@ -9,13 +9,11 @@ h2 {
 
 .cart {
   width: 100%;
+  height: 100%;
   overflow: auto;
   display: flex;
   flex-direction: column;
-}
-
-.cartList {
-  padding-left: 5%;
+  justify-content: flex-end;
   width: 90%;
 }
 
@@ -23,8 +21,34 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: solid rgb(206, 206, 206) 1px;
+  background-color: rgb(184, 129, 129);
   border-radius: 15px;
   padding: 10px 0px 10px 0px;
   margin: 10px 0px 10px 0px;
+}
+
+.totalContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.totalPrice {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cartItemInputs {
+  margin-right: 6px;
+}
+
+.plusButton {
+  width: 20px;
+  margin-top: 10px;
+}
+
+.minusButton {
+  width: 20px;
+  margin-top: 10px;
 }

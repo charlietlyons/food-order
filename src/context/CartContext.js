@@ -8,15 +8,38 @@ export const CartContextProvider = (props) => {
     const [totalPrice, setTotalPrice] = useState(0.00);
     const [totalItems, setTotalItems] = useState(0);
 
+    function adjustTotals(itemsAdjustment,priceAdjustment) {
+        setTotalItems(totalItems + itemsAdjustment)
+        setTotalPrice(totalPrice + priceAdjustment);
+    }
+
     return <CartContext.Provider value={{
         items: items,
         totalPrice: totalPrice,
         totalItems: totalItems,
-        updateItems: (newItem) => {
-            setTotalItems(totalItems + parseInt(newItem.amount))
-            setTotalPrice(totalPrice + parseFloat(newItem.price));
-            dispatch(newItem);
-        } 
+        updateItems: (item) => {
+            if (parseInt(item.amount) > 0) {
+                adjustTotals(parseInt(item.amount), parseFloat(item.price) * parseInt(item.amount));
+                dispatch({
+                    item: item,
+                    type: "menuAdd"
+                });
+            }
+        },
+        incrementItem: (item) => {
+            adjustTotals(1, parseFloat(item.price));
+            dispatch({
+                    item: item,
+                    type: "increment"
+                });
+        },
+        decrementItem: (item) => {
+            adjustTotals(-1, -parseFloat(item.price));
+            dispatch({
+                    item: item,
+                    type: "decrement"
+                });
+        }
     }}>
         {props.children}
     </CartContext.Provider>

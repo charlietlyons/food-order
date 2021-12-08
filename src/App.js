@@ -11,10 +11,10 @@ function App() {
 
   return (
       <CartContextProvider className="App">
+        <Modal showModal={showModal} />
         <NavigationBar onCartClick={() => { setShowModal(!showModal) }}/>
         <Banner/>
         <Section/>
-        <Modal showModal={showModal} />
       </CartContextProvider>
   );
 }

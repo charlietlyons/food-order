@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Common.module.css'
 
 const Column = (props) => {
-    return <div className={styles.column}>
+    return <div className={`${props.className} ${styles.column}`}>
         {props.children}
     </div>
 }

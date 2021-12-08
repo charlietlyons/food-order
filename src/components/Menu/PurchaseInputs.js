@@ -12,14 +12,14 @@ const PurchaseInputs = (props) => {
         { cartContext => {
             return <div className={styles.purchaseInputs}>
                 <Row>
-                Amount<input value={amount} type="number" className={styles.amount} onChange={(event) => { 
+                Amount<input value={amount} type="number" className={styles.amount} min="0" onChange={(event) => { 
                     setAmount(event.target.value)}}/>
                 </Row>
                 <Button className={styles.addToCartButton} onClick={() => cartContext.updateItems({
                     title: props.itemProps.title,
                     description: props.itemProps.description,
                     price: props.itemProps.price,
-                    amount: amount,
+                    amount: amount
                 })}>+ Add</Button>
             </div>
         }}

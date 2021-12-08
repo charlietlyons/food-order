@@ -7,10 +7,11 @@
   position: fixed;
   display: flex;
   width: 45%;
-  height: 45%;
   justify-content: center;
+  border-radius: 15px;
   top: 27.5%;
   left: 27.5%;
   background-color: aliceblue;
-  border: solid black 1px;
+  border: solid maroon 3px;
+  background-color: rgb(201, 151, 151);
 }
