@@ -3,9 +3,10 @@
 }
 
 .modal {
-  z-index: 3;
+  z-index: 5;
   position: fixed;
   display: flex;
+  align-items: center;
   width: 45%;
   justify-content: center;
   border-radius: 15px;
@@ -14,4 +15,39 @@
   background-color: aliceblue;
   border: solid maroon 3px;
   background-color: rgb(201, 151, 151);
+}
+
+.closeButton {
+  font-size: large;
+  background-color: maroon;
+  color: aliceblue;
+  margin-bottom: 10%;
+  padding: 15px;
+  margin-right: 10%;
+}
+
+.closeButton:hover {
+  background-color: rgb(220, 91, 91);
+}
+
+.orderButton {
+  font-size: large;
+  background-color: rgb(238, 238, 238);
+  color: maroon;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  padding: 15px;
+}
+
+.orderButton:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.modalBackfill {
+  position: fixed;
+  z-index: 3;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 50%;
 }

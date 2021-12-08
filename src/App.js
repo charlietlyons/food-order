@@ -11,7 +11,7 @@ function App() {
 
   return (
       <CartContextProvider className="App">
-        <Modal showModal={showModal} />
+        <Modal showModal={showModal} onCloseModal={() => setShowModal(false)} />
         <NavigationBar onCartClick={() => { setShowModal(!showModal) }}/>
         <Banner/>
         <Section/>
