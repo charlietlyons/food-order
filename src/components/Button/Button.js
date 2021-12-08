@@ -6,4 +6,4 @@ const Button = (props) => {
     return <button className={`${props.className} ${styles.button}`} onClick={props.onClick}>{props.children}</button>
 }
 
-export default Button;
+export default React.memo(Button);

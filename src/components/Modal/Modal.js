@@ -19,4 +19,4 @@ const Modal = (props) => {
     </Row>
 }
 
-export default Modal;
+export default React.memo(Modal);
