@@ -13,7 +13,7 @@ const Modal = (props) => {
             <Cart />
             <Row>
                 <Button className={styles.closeButton} onClick={() => props.onCloseModal()}>Close</Button>
-                <Button className={styles.orderButton}>Order</Button>
+                <Button className={styles.orderButton} onClick={() => console.log("Ordering...")}>Order</Button>
             </Row>
         </Column>
     </Row>

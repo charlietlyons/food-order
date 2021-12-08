@@ -43,6 +43,10 @@
   background-color: rgb(255, 255, 255);
 }
 
+.orderButton:active {
+  background-color: rgb(255, 231, 231);
+}
+
 .modalBackfill {
   position: fixed;
   z-index: 3;
