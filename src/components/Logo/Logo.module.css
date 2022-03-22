@@ -1,7 +1,9 @@
 .logoContainer {
+  font-family: Gabriola serif;
   display: flex;
   flex-direction: column;
   margin: 35px 0px 35px 20%;
+  transform: skewX(-15deg);
 }
 
 .logoContainer h1 {
